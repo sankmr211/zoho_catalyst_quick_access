@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "targets": [
+      "quickaccess_server"
+    ],
+    "ignore": [],
+    "source": "functions"
+  },
+  "client": {
+    "source": "qucikaccessclient",
+    "plugin": "zcatalyst-cli-plugin-react"
+  }
+}

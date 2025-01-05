@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "24833000000009793",
+      "name": "sandeveloper",
+      "domain": {
+        "id": "10093491916",
+        "name": "sandeveloper-872678821.development"
+      },
+      "timezone": "America/Los_Angeles",
+      "env": [
+        {
+          "idx": 1,
+          "id": "872678821",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}

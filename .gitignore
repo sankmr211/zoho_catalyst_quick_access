@@ -1,0 +1,11 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/qucikaccessclient/node_modules
+
+# production
+/qucikaccessclient/build
+
+
+functions/quickaccess_server/node_modules
+

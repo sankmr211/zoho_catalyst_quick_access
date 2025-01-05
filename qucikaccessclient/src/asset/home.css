@@ -1,0 +1,204 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Adjust the main content */
+.main-content {
+    margin-top: 10px;
+    padding: 20px;
+}
+/* Grid container styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    /* Default grid for large screens */
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Grid item styles */
+.grid-item {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+    background-color: #ffd43b;
+}
+
+/* Icon styles */
+.icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.5rem; /* Default size for large screens */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Quick Access Logo */
+.quick-access-logo {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-bottom: 2px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    height: 60px; /* Set a fixed height for the sticky logo */
+}
+
+.quick-access-logo:hover {
+    background-color: #ffd43b;
+    transform: scale(1.05);
+}
+
+.quick-access-logo .logo-icon {
+    margin-right: 10px;
+    color: #ff5722;
+}
+
+.logo-icon {
+    padding: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        /* Adjust grid for medium screens */
+        gap: 25px;
+    }
+
+    .heading {
+        font-size: 2.2rem; /* Slightly smaller for medium screens */
+    }
+}
+
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
+        gap: 20px; /* Keep the spacing between items */
+    }
+
+    .heading {
+        font-size: 2rem; /* Reduce size for tablets */
+        margin-bottom: 15px; /* Adjust spacing below heading */
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(5, 1fr);
+        /* Smaller tablets, landscape phones */
+        gap: 15px;
+    }
+
+    .grid-item {
+        padding: 15px;
+    }
+
+    .icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .heading {
+        font-size: 1.8rem; /* Smaller size for small tablets */
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        /* Single column for very small screens */
+    }
+
+    .grid-item {
+        padding: 10px;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .heading {
+        font-size: 1.5rem; /* Smallest size for mobile devices */
+        margin-bottom: 10px;
+    }
+
+}
+
+/* Responsive adjustments for screens up to 425px width (Mobile L) */
+@media (max-width: 425px) {
+    /* Adjust the padding in the body for mobile */
+    body {
+        padding: 10px;
+    }
+
+    /* Ensure space between the sticky logo and the content */
+    .main-content {
+        margin-top: 30px;
+    }
+
+    /* Grid container: Adjust columns for smaller screen */
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column for small screens */
+        gap: 15px;
+    }
+
+    .grid-item {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px; /* Smaller icons for mobile */
+    }
+
+    .heading {
+        font-size: 1.8rem; /* Adjust heading size for smaller devices */
+        margin-bottom: 15px; /* Adjust spacing below heading */
+    }
+}
