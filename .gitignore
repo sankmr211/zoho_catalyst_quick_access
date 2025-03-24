@@ -9,3 +9,7 @@
 
 functions/quickaccess_server/node_modules
 
+.build
+/catalyst-debug.log
+
+
